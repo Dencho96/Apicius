@@ -1,0 +1,59 @@
+.info {
+    padding: 97px 0 70px;
+
+    @include maxw1200 {
+        padding: 85px 0 65px;
+    }
+
+    @include maxw992 {
+        padding: 75px 0 60px;
+    }
+
+    @include maxw576 {
+        padding: 40px 0 30px;
+    }
+
+    &__inner {
+        max-width: 575px;
+        width: 100%;
+
+        @include maxw992 {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+    &__title-text, &__title-year {
+        font-family: "Beaufort", serif;
+        font-weight: 500;
+    }
+
+    &__title-text {
+        text-transform: uppercase;
+
+        &--top {
+            font-size: 16px;
+        }
+
+        &--bottom {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__title-year {
+        color: #893E37;
+        font-size: 96px;
+        font-weight: 400;
+    }
+
+    &__text {
+        &+& {
+            margin-top: 14px;
+        }
+    }
+}

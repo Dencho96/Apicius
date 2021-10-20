@@ -1,0 +1,63 @@
+.description {
+    padding: 98px 0;
+
+    @include maxw992 {
+        padding: 75px 0;
+    }
+
+    @include maxw576 {
+        padding: 50px 0;
+    }
+
+    background-image: url('../images/description-bg.svg');
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+        padding: 57px 45px;
+        background-color: white;
+
+        @include maxw992 {
+            flex-direction: column;
+        }
+
+        @include maxw768 {
+            padding: 25px 15px;
+        }
+    }
+
+    &__title,
+    &__box {
+        color: #425563;
+    }
+
+    &__title {
+        margin-right: 15px;
+        max-width: 455px;
+        width: 100%;
+        font-size: 28px;
+        line-height: 32px;
+        font-family: "Beaufort", serif;
+
+        @include maxw992 {
+            margin: 0 0 35px 0;
+            text-align: center;
+        }
+
+        @include maxw576 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    &__box {
+        max-width: 575px;
+        width: 100%;
+    }
+
+    &__text {
+        &+& {
+            margin-top: 14px;
+        }
+    }
+}

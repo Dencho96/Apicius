@@ -1,0 +1,56 @@
+.slogan {
+    padding: 120px 0 120px;
+    background-image: url('../images/slogan-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include maxw992 {
+        background-position: center;
+    }
+
+    &__inner {
+        width: 100%;
+        position: relative;
+    }
+
+    &__title {
+        max-width: 575px;
+        width: 100%;
+        color: white;
+        font-size: 36px;
+
+        @include maxw992 {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include maxw768 {
+            font-size: 30px;
+            line-height: 34px;
+        }
+
+        @include maxw576 {
+            font-size: 26px;
+            line-height: 30px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%) scale(1.4);
+
+        @include maxw1470 {
+            transform: translateY(-50%) scale(1);
+        }
+        
+        @include maxw1200 {
+            transform: translateY(-41%) scale(0.7);
+        }
+
+        @include maxw992 {
+            display: none;
+        }
+    }
+}

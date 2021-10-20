@@ -1,3 +1,13 @@
 @import 'fonts';
 @import 'vars';
+@import 'mixins';
 @import 'global';
+
+@import 'page-index/hero';
+@import 'page-index/inspired';
+@import 'page-index/promo';
+@import 'page-index/info';
+@import 'page-index/slogan';
+@import 'page-index/reserve';
+@import 'page-index/description';
+@import 'page-index/footer';

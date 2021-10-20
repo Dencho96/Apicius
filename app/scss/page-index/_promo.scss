@@ -1,0 +1,11 @@
+.promo {
+    height: 480px;
+    background-image: url('../images/promo-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @include maxw768 {
+        height: 390px;
+    }
+}

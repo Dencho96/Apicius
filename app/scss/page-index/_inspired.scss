@@ -1,0 +1,74 @@
+.inspired {
+    padding: 150px 0 120px;
+
+    @include maxw1470 {
+        padding: 125px 0 110px;
+    }
+
+    @include maxw1200 {
+        padding: 90px 0 80px;
+    }
+
+    @include maxw992 {
+        padding: 75px 0 60px;
+    }
+
+    @include maxw576 {
+        padding: 40px 0 30px;
+    }
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+
+        @include maxw992 {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 350px;
+        height: 220px;
+        object-fit: contain;
+
+        @include maxw992 {
+            padding-bottom: 35px;
+        }
+
+        @include maxw576 {
+            width: 300px;
+        }
+    }
+
+    &__box {
+        max-width: 620px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: "Beaufort", serif;
+        font-size: 44px;
+        color: $blue;
+        
+        @include maxw1200 {
+            font-size: 38px;
+            line-height: 42px;
+        }
+
+        @include maxw992 {
+            text-align: justify;
+        }
+
+        @include maxw576 {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    &__text {
+        &+& {
+            margin-top: 20px;
+        }
+    }
+}

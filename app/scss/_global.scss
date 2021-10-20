@@ -30,3 +30,39 @@ body {
     overflow-x: hidden;
     background-color: white;
 }
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn {
+    background-color: #425563;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: $blue;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    text-align: justify;
+
+    @include maxw576 {
+        font-size: 16px;
+    }
+}
